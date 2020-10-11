@@ -1,0 +1,205 @@
+/* General */
+body{
+  background-color: #98cdde;
+}
+
+.one-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.image {
+  height: 400px;
+  width: 400px;
+}
+
+
+/* Images */
+
+.big-house{
+  background-image: url('./public/big-house-on-middle.png');
+  background-size: cover;
+}
+
+.house-left{
+  background-image: url('./public/house-on-left.png');
+  background-size: cover;
+}
+
+.small-houses{
+  background-image: url('./public/small-houses-middle.png');
+  background-size: cover;
+}
+
+.restaurant-terrace{
+  background-image: url('./public/restaurant-terrace-left.png');
+  background-size: cover;
+}
+
+.big-path{
+  width: 500px;
+  height: 290px;
+  background-color: white;
+  border-right: 3px solid black;
+  border-top: 3px solid black;
+}
+
+.stairs-to-right{
+  background-image: url('./public/stairs-to-right.png');
+  background-size: cover;
+}
+
+.stairs-to-left{
+  background-image: url('./public/stairs-to-left.png');
+  background-size: cover;
+}
+
+.cliff-left{
+  background-image: url('./public/cliff-left.png');
+  background-size: cover;
+}
+
+.cliff-left-straight{
+  background-image: url('./public/cliff-left-straight.png');
+  background-size: cover;
+}
+
+.church-left{
+  background-image: url('./public/church-on-left.png');
+  background-size: cover;
+}
+
+.sea {
+  background-image: url('./public/sea.png');
+  background-size: cover;
+  z-index: 1000;
+}
+
+.port {
+  background-image: url('./public/port.png');
+  background-size: cover;
+  z-index: 1000;
+  position: relative;
+  left:-5px;
+}
+
+.boat {
+  background-image: url('./public/boat.png');
+  background-size: cover;
+  position: absolute;
+}
+
+
+/* Rows */
+
+.row-6{
+  position: relative;
+  bottom: -1110px;
+}
+
+.row-6 .big-house{
+  position: relative;
+  left: 100px;
+  bottom: -34px;
+}
+
+.row-6 .stairs-to-right{
+  z-index: 1000;
+  position: relative;
+  right: 5px;
+}
+
+.row-6 .cliff-left-straight{
+  position: relative;
+  left: 413px;
+  bottom: -200px;
+}
+
+/* ------------ */
+.row-5{
+  position: relative;
+  bottom: -934px;
+  left: 320px;
+}
+
+.row-5 .church-left{
+  position: relative;
+  left: 210px;
+  bottom: -32px;
+}
+
+.row-5 .stairs-to-left{
+  position: relative;
+  bottom: 28px;
+}
+
+.row-5 .big-path{
+  position: relative;
+  right: 382px;
+  bottom: -259px;
+}
+
+/* ------------ */
+.row-4{
+  position: relative;
+  bottom: -700px;
+  z-index: 1000;
+}
+
+.row-4 .cliff-left-straight{
+  position: relative;
+  bottom: -160px;
+  left: 250px;
+}
+
+.row-4 .house-left{
+  position: relative;
+  left: 20px;
+}
+
+.row-4 .stairs-to-left{
+  position: relative;
+  right: 190px;
+}
+
+/* ------------ */
+.row-3{
+  position: relative;
+  bottom: -465px;
+  left: 80px;
+  z-index: 999;
+}
+
+.row-3 .restaurant-terrace{
+  position: relative;
+  left: 60px;
+}
+
+.row-3 .small-houses{
+  position: relative;
+  right: 25px;
+}
+
+.row-3 .stairs-to-right{
+  position: relative;
+  right: 90px;
+}
+
+/* ------------ */
+.row-2{
+  position: relative;
+  bottom: -261px;
+  left: -100px;
+  z-index: 0;
+}
+
+.row-2 .stairs-to-left{
+  background-color: white;
+}
+
+/* ------------ */
+.row-1{
+  z-index: 1000;
+}
+
