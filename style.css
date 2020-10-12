@@ -8,10 +8,8 @@ body{
 }
 
 .container{
-  position: relative;
-  top: -1800px;
   width: 1180px;
-  height: 3600px;
+  height: 4200px;
   overflow: hidden;
   margin: auto;
   background-color: #98cdde;
@@ -45,7 +43,7 @@ a{
   font-size: 3.5rem;
 }
 
-.intro p{
+.intro p, .intro h4{
   padding:0 200px;
   font-family: 'Raleway', sans-serif;
   font-size: 1.5rem;
@@ -178,7 +176,7 @@ a{
   background-size: cover;
   position: absolute;
   z-index: 3;
-  top: 3210px;
+  top: 3870px;
   left: 70px;
   min-width: 300px;
   height: 300px;
@@ -207,6 +205,28 @@ a{
   position: relative;
   bottom: 2150px;
   left: 600px;
+}
+
+.donkey{
+  width: 100px;
+  height: 100px;
+  top: 4015px;
+  left: 990px;
+  z-index: 1000;
+  position: absolute;
+  background-image: url(./public/donkey.gif);
+  background-size: cover;
+}
+
+.cat{
+  width: 100px;
+  height: 100px;
+  top: 3455px;
+  left: 690px;
+  z-index: 2;
+  position: absolute;
+  background-image: url(./public/cat.gif);
+  background-size: cover;
 }
 
 
@@ -394,4 +414,47 @@ bottom: -1850px;
 
 .row-2 .stairs-to-left{
   z-index: 2;
+}
+
+/* Animations */
+@keyframes boattrip {
+  from {
+    left:0px;
+  } to {
+    left:600px;
+  }
+}
+
+@keyframes waves{
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes roulis{
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+.boat{
+  animation: boattrip 60s, roulis 5s infinite;
+}
+
+.sea{
+  animation-duration: 5s;
+  animation-name: waves;
+  animation-iteration-count: infinite;
 }
