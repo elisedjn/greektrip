@@ -177,7 +177,7 @@ a{
   position: absolute;
   z-index: 3;
   top: 3870px;
-  left: 70px;
+  left: 600px;
   min-width: 300px;
   height: 300px;
 }
@@ -244,7 +244,7 @@ a{
   width: 150px;
   height: 150px;
   top: 3550px;
-  left: 430px;
+  left: 330px;
   z-index: 2;
   position: absolute;
   background-image: url(./public/seagull.gif);
@@ -266,8 +266,8 @@ a{
   width: 100px;
   height: 100px;
   top: 3460px;
-  left: 1230px;
-  z-index: 1;
+  left: 1100px;
+  z-index: 3;
   position: absolute;
   background-image: url(./public/plant.gif);
   background-size: cover;
@@ -277,7 +277,7 @@ a{
   width: 60px;
   height: 60px;
   top: 4047px;
-  left: 1220px;
+  left: 1120px;
   z-index: 1000;
   position: absolute;
   background-image: url(./public/plant2.gif);
@@ -288,7 +288,7 @@ a{
   width: 100px;
   height: 200px;
   top: 2815px;
-  left: 1150px;
+  left: 1080px;
   z-index: 1;
   position: absolute;
   background-image: url(./public/palmtree.gif);
@@ -299,7 +299,7 @@ a{
   width: 50px;
   height: 50px;
   top: 3305px;
-  left: 750px;
+  left: 550px;
   z-index: 3;
   position: absolute;
   background-image: url(./public/greek.gif);
@@ -317,11 +317,22 @@ a{
   background-size: cover;
 }
 
+.filming{
+  width: 120px;
+  height: 120px;
+  top: 3750px;
+  left: 435px;
+  z-index: 2;
+  position: absolute;
+  background-image: url(./public/filming.gif);
+  background-size: cover;
+}
+
 .walking{
   width: 150px;
   height: 150px;
   top: 3060px;
-  left: 800px;
+  left: 650px;
   z-index: 3;
   position: absolute;
   background-image: url(./public/walking.gif);
@@ -331,9 +342,9 @@ a{
 .walking2{
   width: 150px;
   height: 150px;
-  top: 3625px;
-  left: 750px;
-  z-index: 5;
+  top: 3790px;
+  left: 550px;
+  z-index: 2;
   position: absolute;
   background-image: url(./public/walking2.gif);
   background-size: cover;
@@ -343,10 +354,32 @@ a{
   width: 700px;
   height: 108px;
   top: 4100px;
-  left: 130px;
+  left: 100px;
   z-index: 1000;
   position: absolute;
   background-image: url(./public/fish.gif);
+  background-size: cover;
+}
+
+.sleepingcat{
+  width: 100px;
+  height: 50px;
+  top: 3315px;
+  left: 1050px;
+  z-index: 1000;
+  position: absolute;
+  background-image: url(./public/sleepingcat.gif);
+  background-size: cover;
+}
+
+.seagull2{
+  width: 120px;
+  height: 68px;
+  top: 3205px;
+  left: 250px;
+  z-index: 3;
+  position: absolute;
+  background-image: url(./public/seagull2.gif);
   background-size: cover;
 }
 
@@ -567,6 +600,54 @@ bottom: -1850px;
   100% {
     transform: rotate(-5deg);
   }
+}
+
+@keyframes walking {
+  0% {
+    left :650px;
+  } 
+  50% {
+    left :1180px;
+    transform: scaleX(1); 
+  }
+  51% {
+    transform: scaleX(-1);
+  }
+  99%{
+    transform: scaleX(-1);
+  }
+  100% {
+    left : 650px;
+    transform: scaleX(1);
+  }
+}
+
+@keyframes walking2 {
+  0% {
+    left :350px;
+  } 
+  50% {
+    left :1100px;
+    transform: scaleX(1); 
+  }
+  51% {
+    transform: scaleX(-1);
+  }
+  99%{
+    transform: scaleX(-1);
+  }
+  100% {
+    left : 350px;
+    transform: scaleX(1);
+  }
+}
+
+.walking{
+  animation: walking 15s linear infinite;
+}
+
+.walking2{
+  animation: walking2 20s linear infinite;
 }
 
 .boat{
