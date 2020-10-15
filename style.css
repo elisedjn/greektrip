@@ -229,6 +229,126 @@ a{
   background-size: cover;
 }
 
+.cat2{
+  width: 50px;
+  height: 50px;
+  top: 2952px;
+  left: 890px;
+  z-index: 2;
+  position: absolute;
+  background-image: url(./public/cat2.gif);
+  background-size: cover;
+}
+
+.seagull{
+  width: 150px;
+  height: 150px;
+  top: 3550px;
+  left: 430px;
+  z-index: 2;
+  position: absolute;
+  background-image: url(./public/seagull.gif);
+  background-size: cover;
+}
+
+.sun{
+  width: 150px;
+  height: 150px;
+  top: 2550px;
+  left: 430px;
+  z-index: 2;
+  position: absolute;
+  background-image: url(./public/sun.gif);
+  background-size: cover;
+}
+
+.plant{
+  width: 100px;
+  height: 100px;
+  top: 3460px;
+  left: 1230px;
+  z-index: 1;
+  position: absolute;
+  background-image: url(./public/plant.gif);
+  background-size: cover;
+}
+
+.plant2{
+  width: 60px;
+  height: 60px;
+  top: 4047px;
+  left: 1220px;
+  z-index: 1000;
+  position: absolute;
+  background-image: url(./public/plant2.gif);
+  background-size: cover;
+}
+
+.palmtree{
+  width: 100px;
+  height: 200px;
+  top: 2815px;
+  left: 1150px;
+  z-index: 1;
+  position: absolute;
+  background-image: url(./public/palmtree.gif);
+  background-size: cover;
+}
+
+.greek{
+  width: 50px;
+  height: 50px;
+  top: 3305px;
+  left: 750px;
+  z-index: 3;
+  position: absolute;
+  background-image: url(./public/greek.gif);
+  background-size: cover;
+}
+
+.selfie{
+  width: 120px;
+  height: 120px;
+  top: 2885px;
+  left: 680px;
+  z-index: 3;
+  position: absolute;
+  background-image: url(./public/selfie.gif);
+  background-size: cover;
+}
+
+.walking{
+  width: 150px;
+  height: 150px;
+  top: 3060px;
+  left: 800px;
+  z-index: 3;
+  position: absolute;
+  background-image: url(./public/walking.gif);
+  background-size: cover;
+}
+
+.walking2{
+  width: 150px;
+  height: 150px;
+  top: 3625px;
+  left: 750px;
+  z-index: 5;
+  position: absolute;
+  background-image: url(./public/walking2.gif);
+  background-size: cover;
+}
+
+.fish{
+  width: 700px;
+  height: 108px;
+  top: 4100px;
+  left: 130px;
+  z-index: 1000;
+  position: absolute;
+  background-image: url(./public/fish.gif);
+  background-size: cover;
+}
 
 /* Rows */
 .row-9{
