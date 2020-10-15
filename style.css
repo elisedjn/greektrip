@@ -10,6 +10,7 @@ body{
 .container{
   width: 1180px;
   height: 4200px;
+  position: relative;
   overflow: hidden;
   margin: auto;
   background-color: #98cdde;
@@ -29,6 +30,38 @@ body{
 a{
   text-decoration: none;
   color: black;
+}
+
+#popUp{
+  background-color: white;
+  width: 70%;
+  height: 80%;
+  position: fixed;
+  top: 10%;
+  left: 15%;
+  z-index: 1000;
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  display: none;
+}
+
+#popUp .continue-btn {
+  background-color: #436ea9	;
+  font-family: 'Ribeye Marrow', cursive;
+  box-shadow: 10px 5px 5px grey;
+  font-size: 1.2rem;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+#popUp .continue-btn:active{
+  box-shadow: 7px 3px 3px grey;
+  transform: translateY(2px);
 }
 
 /* Intro */
@@ -101,8 +134,9 @@ a{
 }
 
 .smoke{
-  background-image: url('./public/smoke.png');
+  background-image: url('./public/smoke.gif');
   background-size: cover;
+  cursor: pointer;
 }
 
 .volcano{
@@ -158,8 +192,10 @@ a{
 }
 
 .sea {
+  height: 200px;
   background-image: url('./public/sea.png');
   background-size: cover;
+  background-position: bottom;
   z-index: 1000;
 }
 
@@ -175,11 +211,12 @@ a{
   background-image: url('./public/boat.png');
   background-size: cover;
   position: absolute;
-  z-index: 3;
+  z-index: 4;
   top: 3870px;
-  left: 600px;
+  left: 550px;
   min-width: 300px;
   height: 300px;
+  cursor: pointer;
 }
 
 .bell-tower{
@@ -210,78 +247,85 @@ a{
 .donkey{
   width: 100px;
   height: 100px;
-  top: 4015px;
-  left: 990px;
+  top: 4009px;
+  left: 890px;
   z-index: 1000;
   position: absolute;
   background-image: url(./public/donkey.gif);
   background-size: cover;
+  cursor: pointer;
 }
 
 .cat{
   width: 100px;
   height: 100px;
-  top: 3455px;
-  left: 690px;
-  z-index: 2;
+  top: 3449px;
+  left: 590px;
+  z-index: 5;
   position: absolute;
   background-image: url(./public/cat.gif);
   background-size: cover;
+  cursor: pointer;
 }
 
 .cat2{
   width: 50px;
   height: 50px;
-  top: 2952px;
-  left: 890px;
+  top: 2945px;
+  left: 840px;
   z-index: 2;
   position: absolute;
   background-image: url(./public/cat2.gif);
   background-size: cover;
+  cursor: pointer;
 }
 
 .seagull{
   width: 150px;
   height: 150px;
-  top: 3550px;
-  left: 330px;
-  z-index: 2;
+  top: 3544px;
+  left: 300px;
+  z-index: 5;
   position: absolute;
   background-image: url(./public/seagull.gif);
   background-size: cover;
+  cursor: pointer;
 }
 
 .sun{
   width: 150px;
   height: 150px;
-  top: 2550px;
-  left: 430px;
+  top: 2600px;
+  left: 350px;
   z-index: 2;
   position: absolute;
   background-image: url(./public/sun.gif);
   background-size: cover;
+  cursor: pointer;
 }
 
 .plant{
   width: 100px;
   height: 100px;
-  top: 3460px;
-  left: 1100px;
+  top: 3452px;
+  left: 1090px;
   z-index: 3;
   position: absolute;
   background-image: url(./public/plant.gif);
   background-size: cover;
+  cursor: pointer;
 }
 
 .plant2{
   width: 60px;
   height: 60px;
-  top: 4047px;
+  top: 4040px;
   left: 1120px;
   z-index: 1000;
   position: absolute;
   background-image: url(./public/plant2.gif);
   background-size: cover;
+  cursor: pointer;
 }
 
 .palmtree{
@@ -289,65 +333,94 @@ a{
   height: 200px;
   top: 2815px;
   left: 1080px;
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   background-image: url(./public/palmtree.gif);
   background-size: cover;
+  cursor: pointer;
+}
+
+.palmtree-small{
+  width: 50px;
+  height: 100px;
+  top: 2915px;
+  left: 1040px;
+  z-index: 2;
+  position: absolute;
+  background-image: url(./public/palmtree.gif);
+  background-size: cover;
+  cursor: pointer;
 }
 
 .greek{
   width: 50px;
   height: 50px;
-  top: 3305px;
-  left: 550px;
+  top: 3295px;
+  left: 500px;
   z-index: 3;
   position: absolute;
   background-image: url(./public/greek.gif);
   background-size: cover;
+  cursor: pointer;
 }
 
 .selfie{
   width: 120px;
   height: 120px;
-  top: 2885px;
-  left: 680px;
+  top: 2875px;
+  left: 600px;
   z-index: 3;
   position: absolute;
   background-image: url(./public/selfie.gif);
   background-size: cover;
+  cursor: pointer;
 }
 
 .filming{
   width: 120px;
   height: 120px;
-  top: 3750px;
-  left: 435px;
-  z-index: 2;
+  top: 3435px;
+  left: 728px;
+  z-index: 4;
   position: absolute;
   background-image: url(./public/filming.gif);
   background-size: cover;
+  cursor: pointer;
 }
 
 .walking{
   width: 150px;
   height: 150px;
-  top: 3060px;
+  top: 3054px;
   left: 650px;
-  z-index: 3;
   position: absolute;
   background-image: url(./public/walking.gif);
   background-size: cover;
+  cursor: pointer;
 }
 
 .walking2{
   width: 150px;
   height: 150px;
-  top: 3790px;
+  top: 3782px;
   left: 550px;
   z-index: 2;
   position: absolute;
   background-image: url(./public/walking2.gif);
   background-size: cover;
+  cursor: pointer;
+}
+
+.walking3{
+  width: 100px;
+  height: 100px;
+  top: 2950px;
+  left: 1200px;
+  z-index: 1;
+  position: absolute;
+  background-image: url(./public/walking3.gif);
+  background-size: cover;
+  cursor: pointer;
 }
 
 .fish{
@@ -359,17 +432,19 @@ a{
   position: absolute;
   background-image: url(./public/fish.gif);
   background-size: cover;
+  cursor: pointer;
 }
 
 .sleepingcat{
   width: 100px;
   height: 50px;
-  top: 3315px;
-  left: 1050px;
+  top: 3310px;
+  left: 1110px;
   z-index: 1000;
   position: absolute;
   background-image: url(./public/sleepingcat.gif);
   background-size: cover;
+  cursor: pointer;
 }
 
 .seagull2{
@@ -381,6 +456,19 @@ a{
   position: absolute;
   background-image: url(./public/seagull2.gif);
   background-size: cover;
+  cursor: pointer;
+}
+
+.gyros{
+  width: 101px;
+  height: 56px;
+  top: 3850px;
+  left: 250px;
+  z-index: 3;
+  position: absolute;
+  background-image: url(./public/gyros.gif);
+  background-size: cover;
+  cursor: pointer;
 }
 
 /* Rows */
@@ -396,7 +484,8 @@ bottom: -1850px;
 
 .row-9 .smoke{
   position: relative;
-  left: 400px;
+  left: 320px;
+  bottom: 205px;
 }
 
 .row-8{
@@ -407,18 +496,19 @@ bottom: -1850px;
 
 .row-8 .image{
   min-width: 200px;
-  z-index: 2;
+  z-index: 3;
 }
 
 .row-8 .big-house, .row-8 .bell-tower {
   background-position: center;
   position: relative;
   right: 30px;
+  cursor: pointer;
 }
 
 .row-8 .bell-tower{
   right: 102px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .row-8 .church-left{
@@ -439,6 +529,8 @@ bottom: -1850px;
   left: 80px;
 }
 .row-7 .stairs-to-left{
+  height: 200px;
+  background-position: bottom;
   position: relative;
   z-index: 3;
 }
@@ -574,7 +666,7 @@ bottom: -1850px;
   from {
     left:0px;
   } to {
-    left:600px;
+    left:550px;
   }
 }
 
@@ -605,29 +697,37 @@ bottom: -1850px;
 @keyframes walking {
   0% {
     left :650px;
+    z-index: 5;
   } 
+  37%{
+    z-index: 3;
+  }
   50% {
     left :1180px;
-    transform: scaleX(1); 
+    transform: scaleX(1);
+    z-index: 2; 
   }
   51% {
     transform: scaleX(-1);
+    z-index: 2;
   }
   99%{
     transform: scaleX(-1);
+    z-index: 5;
   }
   100% {
     left : 650px;
     transform: scaleX(1);
+    z-index: 5;
   }
 }
 
 @keyframes walking2 {
   0% {
-    left :350px;
+    left :250px;
   } 
   50% {
-    left :1100px;
+    left :1200px;
     transform: scaleX(1); 
   }
   51% {
@@ -637,9 +737,57 @@ bottom: -1850px;
     transform: scaleX(-1);
   }
   100% {
-    left : 350px;
+    left : 250px;
     transform: scaleX(1);
   }
+}
+
+@keyframes walking3{
+  0% {
+    top: 2950px;
+    left: 1200px;
+    transform: scaleX(-1)
+  } 
+  50% {
+    top: 2750px;
+    left: 900px;
+    transform: scaleX(-1); 
+  }
+  51% {
+    transform: scaleX(1);
+  }
+  99%{
+    transform: scaleX(1);
+  }
+  100% {
+    top: 2950px;
+    left: 1200px;
+    transform: scaleX(-1);
+  }
+}
+
+@keyframes flying{
+  0% {
+    left :250px;
+  } 
+  50% {
+    left :0px;
+    transform: scaleX(1); 
+  }
+  51% {
+    transform: scaleX(-1);
+  }
+  99%{
+    transform: scaleX(-1);
+  }
+  100% {
+    left : 250px;
+    transform: scaleX(1);
+  }
+}
+
+.seagull2{
+  animation: flying 15s linear infinite;
 }
 
 .walking{
@@ -648,6 +796,10 @@ bottom: -1850px;
 
 .walking2{
   animation: walking2 20s linear infinite;
+}
+
+.walking3{
+  animation: walking3 15s linear infinite;
 }
 
 .boat{
