@@ -37,7 +37,7 @@ a{
   width: 70%;
   height: 80%;
   position: fixed;
-  top: 10%;
+  top: 5%;
   left: 15%;
   z-index: 1000;
   border: 3px solid black;
@@ -45,6 +45,7 @@ a{
   padding: 20px;
   text-align: center;
   display: none;
+  overflow: auto;
 }
 
 #popUp .continue-btn {
@@ -62,6 +63,25 @@ a{
 #popUp .continue-btn:active{
   box-shadow: 7px 3px 3px grey;
   transform: translateY(2px);
+}
+
+#popUp .picture-title{
+  font-family: 'Ribeye Marrow', cursive;
+  font-size: 1.5rem;
+}
+
+#popUp .story{
+  font-family: 'Raleway', sans-serif;
+}
+
+#popUp a{
+  color:#436ea9;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+#popUp .popup-image img{
+  width: 80%;
 }
 
 /* Intro */
@@ -109,43 +129,43 @@ a{
 /* Images */
 
 .big-house{
-  background-image: url('./public/big-house-on-middle.png');
+  background-image: url('./public/images/big-house-on-middle.png');
   background-size: cover;
 }
 
 .house-left{
-  background-image: url('./public/house-on-left.png');
+  background-image: url('./public/images/house-on-left.png');
   background-size: cover;
 }
 
 .small-houses{
-  background-image: url('./public/small-houses-middle.png');
+  background-image: url('./public/images/small-houses-middle.png');
   background-size: cover;
 }
 
 .restaurant-terrace{
-  background-image: url('./public/restaurant-terrace-left.png');
+  background-image: url('./public/images/restaurant-terrace-left.png');
   background-size: cover;
 }
 
 .lava{
-  background-image: url('./public/lava.png');
+  background-image: url('./public/images/lava.png');
   background-size: cover;
 }
 
 .smoke{
-  background-image: url('./public/smoke.gif');
+  background-image: url('./public/gifs/smoke.gif');
   background-size: cover;
   cursor: pointer;
 }
 
 .volcano{
-  background-image: url('./public/volcano.png');
+  background-image: url('./public/images/volcano.png');
   background-size: cover;
 }
 
 .side-volcano{
-  background-image: url('./public/side-volcano.png');
+  background-image: url('./public/images/side-volcano.png');
   background-size: cover;
 }
 
@@ -167,40 +187,40 @@ a{
 }
 
 .stairs-to-right{
-  background-image: url('./public/stairs-to-right.png');
+  background-image: url('./public/images/stairs-to-right.png');
   background-size: cover;
 }
 
 .stairs-to-left{
-  background-image: url('./public/stairs-to-left.png');
+  background-image: url('./public/images/stairs-to-left.png');
   background-size: cover;
 }
 
 .cliff-left{
-  background-image: url('./public/cliff-left.png');
+  background-image: url('./public/images/cliff-left.png');
   background-size: cover;
 }
 
 .cliff-left-straight{
-  background-image: url('./public/cliff-left-straight.png');
+  background-image: url('./public/images/cliff-left-straight.png');
   background-size: cover;
 }
 
 .church-left{
-  background-image: url('./public/church-on-left.png');
+  background-image: url('./public/images/church-on-left.png');
   background-size: cover;
 }
 
 .sea {
   height: 200px;
-  background-image: url('./public/sea.png');
+  background-image: url('./public/images/sea.png');
   background-size: cover;
   background-position: bottom;
   z-index: 1000;
 }
 
 .port {
-  background-image: url('./public/port.png');
+  background-image: url('./public/images/port.png');
   background-size: cover;
   z-index: 1000;
   position: relative;
@@ -208,7 +228,7 @@ a{
 }
 
 .boat {
-  background-image: url('./public/boat.png');
+  background-image: url('./public/images/boat.png');
   background-size: cover;
   position: absolute;
   z-index: 4;
@@ -220,7 +240,7 @@ a{
 }
 
 .bell-tower{
-  background-image: url('./public/bell-tower.png');
+  background-image: url('./public/images/bell-tower.png');
   background-size: cover;
 }
 
@@ -251,7 +271,7 @@ a{
   left: 890px;
   z-index: 1000;
   position: absolute;
-  background-image: url(./public/donkey.gif);
+  background-image: url(./public/gifs/donkey.gif);
   background-size: cover;
   cursor: pointer;
 }
@@ -263,7 +283,7 @@ a{
   left: 590px;
   z-index: 5;
   position: absolute;
-  background-image: url(./public/cat.gif);
+  background-image: url(./public/gifs/cat.gif);
   background-size: cover;
   cursor: pointer;
 }
@@ -275,7 +295,7 @@ a{
   left: 840px;
   z-index: 2;
   position: absolute;
-  background-image: url(./public/cat2.gif);
+  background-image: url(./public/gifs/cat2.gif);
   background-size: cover;
   cursor: pointer;
 }
@@ -287,7 +307,7 @@ a{
   left: 300px;
   z-index: 5;
   position: absolute;
-  background-image: url(./public/seagull.gif);
+  background-image: url(./public/gifs/seagull.gif);
   background-size: cover;
   cursor: pointer;
 }
@@ -299,7 +319,7 @@ a{
   left: 350px;
   z-index: 2;
   position: absolute;
-  background-image: url(./public/sun.gif);
+  background-image: url(./public/gifs/sun.gif);
   background-size: cover;
   cursor: pointer;
 }
@@ -311,7 +331,7 @@ a{
   left: 1090px;
   z-index: 3;
   position: absolute;
-  background-image: url(./public/plant.gif);
+  background-image: url(./public/gifs/plant.gif);
   background-size: cover;
   cursor: pointer;
 }
@@ -323,7 +343,7 @@ a{
   left: 1120px;
   z-index: 1000;
   position: absolute;
-  background-image: url(./public/plant2.gif);
+  background-image: url(./public/gifs/plant2.gif);
   background-size: cover;
   cursor: pointer;
 }
@@ -335,7 +355,7 @@ a{
   left: 1080px;
   z-index: 2;
   position: absolute;
-  background-image: url(./public/palmtree.gif);
+  background-image: url(./public/gifs/palmtree.gif);
   background-size: cover;
   cursor: pointer;
 }
@@ -347,7 +367,7 @@ a{
   left: 1040px;
   z-index: 2;
   position: absolute;
-  background-image: url(./public/palmtree.gif);
+  background-image: url(./public/gifs/palmtree.gif);
   background-size: cover;
   cursor: pointer;
 }
@@ -359,7 +379,7 @@ a{
   left: 500px;
   z-index: 3;
   position: absolute;
-  background-image: url(./public/greek.gif);
+  background-image: url(./public/gifs/greek.gif);
   background-size: cover;
   cursor: pointer;
 }
@@ -371,7 +391,7 @@ a{
   left: 600px;
   z-index: 3;
   position: absolute;
-  background-image: url(./public/selfie.gif);
+  background-image: url(./public/gifs/selfie.gif);
   background-size: cover;
   cursor: pointer;
 }
@@ -383,7 +403,7 @@ a{
   left: 728px;
   z-index: 4;
   position: absolute;
-  background-image: url(./public/filming.gif);
+  background-image: url(./public/gifs/filming.gif);
   background-size: cover;
   cursor: pointer;
 }
@@ -394,7 +414,7 @@ a{
   top: 3054px;
   left: 650px;
   position: absolute;
-  background-image: url(./public/walking.gif);
+  background-image: url(./public/gifs/walking.gif);
   background-size: cover;
   cursor: pointer;
 }
@@ -406,7 +426,7 @@ a{
   left: 550px;
   z-index: 2;
   position: absolute;
-  background-image: url(./public/walking2.gif);
+  background-image: url(./public/gifs/walking2.gif);
   background-size: cover;
   cursor: pointer;
 }
@@ -418,7 +438,7 @@ a{
   left: 1200px;
   z-index: 1;
   position: absolute;
-  background-image: url(./public/walking3.gif);
+  background-image: url(./public/gifs/walking3.gif);
   background-size: cover;
   cursor: pointer;
 }
@@ -430,7 +450,7 @@ a{
   left: 100px;
   z-index: 1000;
   position: absolute;
-  background-image: url(./public/fish.gif);
+  background-image: url(./public/gifs/fish.gif);
   background-size: cover;
   cursor: pointer;
 }
@@ -442,7 +462,7 @@ a{
   left: 1110px;
   z-index: 1000;
   position: absolute;
-  background-image: url(./public/sleepingcat.gif);
+  background-image: url(./public/gifs/sleepingcat.gif);
   background-size: cover;
   cursor: pointer;
 }
@@ -454,7 +474,7 @@ a{
   left: 250px;
   z-index: 3;
   position: absolute;
-  background-image: url(./public/seagull2.gif);
+  background-image: url(./public/gifs/seagull2.gif);
   background-size: cover;
   cursor: pointer;
 }
@@ -466,7 +486,7 @@ a{
   left: 250px;
   z-index: 3;
   position: absolute;
-  background-image: url(./public/gyros.gif);
+  background-image: url(./public/gifs/gyros.gif);
   background-size: cover;
   cursor: pointer;
 }
@@ -811,3 +831,5 @@ bottom: -1850px;
   animation-name: waves;
   animation-iteration-count: infinite;
 }
+
+
