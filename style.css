@@ -9,7 +9,7 @@ body{
 
 .container{
   width: 1180px;
-  height: 4200px;
+  height: 3553px;
   position: relative;
   overflow: hidden;
   margin: auto;
@@ -89,6 +89,7 @@ a{
   z-index: 10;
   text-align: center;
   color: white;
+  position: absolute;
 }
 
 .intro h2{
@@ -232,7 +233,8 @@ a{
   background-size: cover;
   position: absolute;
   z-index: 4;
-  top: 3870px;
+  /* initial 3870 */
+  top: 3220px;
   left: 550px;
   min-width: 300px;
   height: 300px;
@@ -267,7 +269,7 @@ a{
 .donkey{
   width: 100px;
   height: 100px;
-  top: 4009px;
+  top: 3362px;
   left: 890px;
   z-index: 1000;
   position: absolute;
@@ -279,7 +281,7 @@ a{
 .cat{
   width: 100px;
   height: 100px;
-  top: 3449px;
+  top: 2802px;
   left: 590px;
   z-index: 5;
   position: absolute;
@@ -291,7 +293,7 @@ a{
 .cat2{
   width: 50px;
   height: 50px;
-  top: 2945px;
+  top: 2298px;
   left: 840px;
   z-index: 2;
   position: absolute;
@@ -303,7 +305,7 @@ a{
 .seagull{
   width: 150px;
   height: 150px;
-  top: 3544px;
+  top: 2897px;
   left: 300px;
   z-index: 5;
   position: absolute;
@@ -315,7 +317,7 @@ a{
 .sun{
   width: 150px;
   height: 150px;
-  top: 2600px;
+  top: 1953px;
   left: 350px;
   z-index: 2;
   position: absolute;
@@ -327,7 +329,7 @@ a{
 .plant{
   width: 100px;
   height: 100px;
-  top: 3452px;
+  top: 2805px;
   left: 1090px;
   z-index: 3;
   position: absolute;
@@ -339,7 +341,7 @@ a{
 .plant2{
   width: 60px;
   height: 60px;
-  top: 4040px;
+  top: 3393px;
   left: 1120px;
   z-index: 1000;
   position: absolute;
@@ -351,7 +353,7 @@ a{
 .palmtree{
   width: 100px;
   height: 200px;
-  top: 2815px;
+  top: 2168px;
   left: 1080px;
   z-index: 2;
   position: absolute;
@@ -363,7 +365,7 @@ a{
 .palmtree-small{
   width: 50px;
   height: 100px;
-  top: 2915px;
+  top: 2268px;
   left: 1040px;
   z-index: 2;
   position: absolute;
@@ -375,7 +377,7 @@ a{
 .greek{
   width: 50px;
   height: 50px;
-  top: 3295px;
+  top: 2648px;
   left: 500px;
   z-index: 3;
   position: absolute;
@@ -387,7 +389,7 @@ a{
 .selfie{
   width: 120px;
   height: 120px;
-  top: 2875px;
+  top: 2228px;
   left: 600px;
   z-index: 3;
   position: absolute;
@@ -399,7 +401,7 @@ a{
 .filming{
   width: 120px;
   height: 120px;
-  top: 3435px;
+  top: 2788px;
   left: 728px;
   z-index: 4;
   position: absolute;
@@ -411,7 +413,7 @@ a{
 .walking{
   width: 150px;
   height: 150px;
-  top: 3054px;
+  top: 2407px;
   left: 650px;
   position: absolute;
   background-image: url(./public/gifs/walking.gif);
@@ -422,7 +424,7 @@ a{
 .walking2{
   width: 150px;
   height: 150px;
-  top: 3782px;
+  top: 3135px;
   left: 550px;
   z-index: 2;
   position: absolute;
@@ -434,7 +436,7 @@ a{
 .walking3{
   width: 100px;
   height: 100px;
-  top: 2950px;
+  top: 2303px;
   left: 1200px;
   z-index: 1;
   position: absolute;
@@ -446,7 +448,7 @@ a{
 .fish{
   width: 700px;
   height: 108px;
-  top: 4100px;
+  top: 3453px;
   left: 100px;
   z-index: 1000;
   position: absolute;
@@ -458,7 +460,7 @@ a{
 .sleepingcat{
   width: 100px;
   height: 50px;
-  top: 3310px;
+  top: 2663px;
   left: 1110px;
   z-index: 1000;
   position: absolute;
@@ -470,7 +472,7 @@ a{
 .seagull2{
   width: 120px;
   height: 68px;
-  top: 3205px;
+  top: 2558px;
   left: 250px;
   z-index: 3;
   position: absolute;
@@ -482,7 +484,7 @@ a{
 .gyros{
   width: 101px;
   height: 56px;
-  top: 3850px;
+  top: 3203px;
   left: 250px;
   z-index: 3;
   position: absolute;
@@ -834,7 +836,18 @@ bottom: -1850px;
 
 @media only screen and (max-width: 1180px){
   #popUp{
+    width: 87vw;
+    height: 92vh;
+    left: 0;
+    top: 0;
+  }
+
+  .intro{
     width: 100vw;
-    height: 100vh;
+    left: calc((1180px - 100vw) / 2);
+  }
+
+  .intro p, .intro h4{
+    padding:0 20px;
   }
 }
