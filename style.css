@@ -314,7 +314,7 @@ a{
   height: 50px;
   top: 2298px;
   left: 840px;
-  z-index: 2;
+  z-index: 5;
   position: absolute;
   background-image: url(./public/gifs/cat2.gif);
   background-size: cover;
