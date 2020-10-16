@@ -32,6 +32,16 @@ a{
   color: black;
 }
 
+#popUpContainer{
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+}
+
 #popUp{
   background-color: white;
   width: 70%;
@@ -44,7 +54,6 @@ a{
   border-radius: 20px;
   padding: 20px;
   text-align: center;
-  display: none;
   overflow: auto;
 }
 
@@ -766,12 +775,12 @@ bottom: -1850px;
 
 @keyframes walking3{
   0% {
-    top: 2950px;
+    top: 2303px;
     left: 1200px;
     transform: scaleX(-1)
   } 
   50% {
-    top: 2750px;
+    top: 2103px;
     left: 900px;
     transform: scaleX(-1); 
   }
@@ -782,7 +791,7 @@ bottom: -1850px;
     transform: scaleX(1);
   }
   100% {
-    top: 2950px;
+    top: 2303px;
     left: 1200px;
     transform: scaleX(-1);
   }
@@ -835,6 +844,11 @@ bottom: -1850px;
 }
 
 @media only screen and (max-width: 1180px){
+  body{
+    margin: 0;
+    padding: 0;
+  }
+
   #popUp{
     width: 87vw;
     height: 92vh;
@@ -844,7 +858,7 @@ bottom: -1850px;
 
   .intro{
     width: 100vw;
-    left: calc((1180px - 100vw) / 2);
+    left: 0;
   }
 
   .intro p, .intro h4{
